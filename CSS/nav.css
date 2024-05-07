@@ -1,0 +1,110 @@
+nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    color: var(--textoClaro);
+    transition: background-color 0.3s;
+}
+
+a, i {
+    color:var(--textoClaro);
+}
+.navbar-blue {
+    background-color: var(--azulFundo); 
+    color: white;
+}
+
+.navbar-white {
+    background-color: white; 
+    color: black; 
+}
+nav ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    list-style: none;
+    gap: 10px;
+}
+
+nav li {
+    transition: 300ms;
+}
+
+nav li:hover {
+    transform: scale(1.1);
+}
+
+button {
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+i.fas,
+i.fab {
+    font-size: 2rem;
+}
+
+nav.section1 {
+    background-color: var(--azulFundo);
+    color: var(--textoClaro);
+}
+
+nav.section2 {
+    background-color: #fff;
+    color: var(--textoEscuro);
+}
+
+nav.section0 {
+    background-color: #ffffff00;
+    color: var(--textoEscuro);
+}
+
+.settings-popup {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    right: 0; /* Position to the right */
+    top: 0; /* Position at the top */
+    width: 200px; /* Width of the popup */
+    height: 40%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0, 0, 0, 0.274); /* Black background with opacity */
+    backdrop-filter: blur(10px);
+    z-index: 1; /* Sit on top */
+}
+    .dropdown-menu {
+        display: none;
+        position: absolute;
+        background-color: var(--textoClaro);
+        min-width: 5dvw;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+        margin-top: 150px;
+
+    }
+
+.dropdown-menu a {
+    color: var(--textoEscuro);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+#closePopup {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 10px;
+}
+
+#opts {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: inherit;
+}

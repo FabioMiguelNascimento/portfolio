@@ -1,0 +1,87 @@
+
+
+.carrossel{
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden; 
+
+    box-shadow: .50em .50em 3em black;
+}
+
+
+.texto{
+    color:#f2f2f2;
+    text-align: center;
+    backdrop-filter: blur(5px);
+    padding: 20px;
+}
+.backdrop{
+    backdrop-filter: blur(7px);
+    padding: 30px;
+}
+.foto{
+    width: 100%;
+    height: 100%;
+
+    
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+}
+#foto1{
+    background-color: var(--azulFundo);
+    z-index: 2;
+}
+
+#foto2{
+    background-color: var(--azulMedio);
+    z-index: 1;
+}
+
+i{
+    transition: 300ms;
+}
+i:hover {
+    transform: scale(1.1);
+}
+
+
+.botoes{
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+
+    position: absolute;
+
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin-bottom: 10px;
+}
+
+[id^="btn-"]{
+    padding: 5px 100px;
+    background-color:  var(--azulClaro);
+    border:none;
+    transition: 200ms;
+}
+
+/* Celular */
+@media (max-width: 768px) {
+
+
+    .texto {
+        width: 70%;
+    }
+}
