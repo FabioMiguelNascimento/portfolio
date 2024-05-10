@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../CSS/carrossel.css">
+    <link rel="stylesheet" href="../CSS/main.css">
+    <link rel="stylesheet" href="../CSS/nav.css">
+    <link rel="stylesheet" href="../CSS/infinitCarrossel.css">
+
+    <!-- Fontes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+
+<body>
+
+    <header id="header">
+        <nav id="navbar">
+            <h1>Fábio</h1>
+            <ul>
+                <li><a href="#linguagens">Linguagens</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#contato">Contato</a></li>
+                <li><a href="https://github.com/F4bi0zin" target="_blank"><i class="fab fa-github"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/fab-nascimento/" target="_blank"><i
+                            class="fab fa-linkedin"></i></a></li>
+                <li><button id="settings"><i class="fas fa-cog"></i></button></li>
+            </ul>
+
+            <div id="settingsPopup" class="settings-popup">
+                <button id="closePopup"><i class="fas fa-times"></i></button>
+                <ul id="opts">
+                    <li><button id="languageIcon"><i class="fas fa-globe"></i></button></li>
+                    <div id="languageDropdown" class="dropdown-menu">
+                        <a href="#" data-value="en">🇧🇷 Português brasileiro</a>
+                        <a href="#" data-value="es">🇺🇸 English</a>
+                    </div>
+                    <li><button id="themeIcon"><i class="fas fa-adjust"></i></button></li>
+                    <div id="themeDropdown" class="dropdown-menu">
+                        <a href="#" data-value="light">🌞 Light</a>
+                        <a href="#" data-value="dark">🌚 Dark</a>
+                    </div>
+                </ul>
+        </nav>
+    </header>
+
+
+    <section class="a">
+        <div class="carrossel">
+
+            <div class="foto" id="foto1">
+                <div class="texto">
+                    <h1>Fábio Miguel Nascimento</h1>
+                    <span>Full Stack Developer</span>
+                    <div class="icons"></div>
+                    <a href="https://github.com/F4bi0zin" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/fab-nascimento/" target="_blank"><i
+                            class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+
+            <div class="foto" id="foto2">
+                <div class="texto">
+                    <h1>TESTE 2</h1>
+                    <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil, similique!</span>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="botoes">
+            <button class="btn-carrossel" data-index="0" id="btn-1"></button>
+            <button class="btn-carrossel" data-index="1" id="btn-2"></button>
+        </div>
+        </div>
+    </section>
+
+
+    <section class="b">
+        <h1>Linguagens</h1>
+        <span>Paragrafo com algum tipo de texto informativo</span>
+        <div class="logos">
+            <div class="logos-slide">
+                <img src="../icons/csharp.svg" alt="C#">
+                <img src="../icons/css3.svg" alt="CSS">
+                <img src="../icons/figma.svg" alt="Figma">
+                <img src="../icons/git.svg" alt="Git">
+                <img src="../icons/html.svg" alt="HTML">
+                <img src="../icons/java.svg" alt="Java">
+                <img src="../icons/javascript.svg" alt="JavaScript">
+                <img src="../icons/mysql.svg" alt="MySQL">
+                <img src="../icons/node.svg" alt="Node.js">
+                <img src="../icons/php01.svg" alt="PHP">
+                <img src="../icons/python.svg" alt="Python">
+                <img src="../icons/react.svg" alt="React">
+            </div>
+        </div>
+    </section>
+
+    <section class="a">
+        <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur modi dolore enim iure est dolorum animi
+            deserunt optio ab! Rerum, aut voluptatum nostrum provident temporibus repellendus eveniet, commodi laborum
+            harum unde modi voluptatem aliquam? Fuga dicta quos voluptates necessitatibus iure dolorum corporis odit
+            explicabo. Tempore enim, unde inventore ad esse ducimus pariatur, laboriosam odit amet velit voluptates
+            fugit voluptatibus quasi omnis sed illum dolorem soluta sint? Facere eveniet mollitia, sequi repudiandae
+            illum quos incidunt fuga delectus ad repellendus qui unde iste temporibus autem, ut minus, nemo dolores
+            facilis nesciunt voluptas distinctio! Pariatur ea nisi nihil nobis quod sunt laborum consectetur.</span>
+
+        <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur modi dolore enim iure est dolorum animi
+            deserunt optio ab! Rerum, aut voluptatum nostrum provident temporibus repellendus eveniet, commodi laborum
+            harum unde modi voluptatem aliquam? Fuga dicta quos voluptates necessitatibus iure dolorum corporis odit
+            explicabo. Tempore enim, unde inventore ad esse ducimus pariatur, laboriosam odit amet velit voluptates
+            fugit voluptatibus quasi omnis sed illum dolorem soluta sint? Facere eveniet mollitia, sequi repudiandae
+            illum quos incidunt fuga delectus ad repellendus qui unde iste temporibus autem, ut minus, nemo dolores
+            facilis nesciunt voluptas distinctio! Pariatur ea nisi nihil nobis quod sunt laborum consectetur.</span>
+    </section>
+
+    <section class="b">
+        <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur modi dolore enim iure est dolorum animi
+            deserunt optio ab! Rerum, aut voluptatum nostrum provident temporibus repellendus eveniet, commodi laborum
+            harum unde modi voluptatem aliquam? Fuga dicta quos voluptates necessitatibus iure dolorum corporis odit
+            explicabo. Tempore enim, unde inventore ad esse ducimus pariatur, laboriosam odit amet velit voluptates
+            fugit voluptatibus quasi omnis sed illum dolorem soluta sint? Facere eveniet mollitia, sequi repudiandae
+            illum quos incidunt fuga delectus ad repellendus qui unde iste temporibus autem, ut minus, nemo dolores
+            facilis nesciunt voluptas distinctio! Pariatur ea nisi nihil nobis quod sunt laborum consectetur.</span>
+
+        <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur modi dolore enim iure est dolorum animi
+            deserunt optio ab! Rerum, aut voluptatum nostrum provident temporibus repellendus eveniet, commodi laborum
+            harum unde modi voluptatem aliquam? Fuga dicta quos voluptates necessitatibus iure dolorum corporis odit
+            explicabo. Tempore enim, unde inventore ad esse ducimus pariatur, laboriosam odit amet velit voluptates
+            fugit voluptatibus quasi omnis sed illum dolorem soluta sint? Facere eveniet mollitia, sequi repudiandae
+            illum quos incidunt fuga delectus ad repellendus qui unde iste temporibus autem, ut minus, nemo dolores
+            facilis nesciunt voluptas distinctio! Pariatur ea nisi nihil nobis quod sunt laborum consectetur.</span>
+    </section>
+
+    <section class="a">
+        <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur modi dolore enim iure est dolorum animi
+            deserunt optio ab! Rerum, aut voluptatum nostrum provident temporibus repellendus eveniet, commodi laborum
+            harum unde modi voluptatem aliquam? Fuga dicta quos voluptates necessitatibus iure dolorum corporis odit
+            explicabo. Tempore enim, unde inventore ad esse ducimus pariatur, laboriosam odit amet velit voluptates
+            fugit voluptatibus quasi omnis sed illum dolorem soluta sint? Facere eveniet mollitia, sequi repudiandae
+            illum quos incidunt fuga delectus ad repellendus qui unde iste temporibus autem, ut minus, nemo dolores
+            facilis nesciunt voluptas distinctio! Pariatur ea nisi nihil nobis quod sunt laborum consectetur.</span>
+
+        <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur modi dolore enim iure est dolorum animi
+            deserunt optio ab! Rerum, aut voluptatum nostrum provident temporibus repellendus eveniet, commodi laborum
+            harum unde modi voluptatem aliquam? Fuga dicta quos voluptates necessitatibus iure dolorum corporis odit
+            explicabo. Tempore enim, unde inventore ad esse ducimus pariatur, laboriosam odit amet velit voluptates
+            fugit voluptatibus quasi omnis sed illum dolorem soluta sint? Facere eveniet mollitia, sequi repudiandae
+            illum quos incidunt fuga delectus ad repellendus qui unde iste temporibus autem, ut minus, nemo dolores
+            facilis nesciunt voluptas distinctio! Pariatur ea nisi nihil nobis quod sunt laborum consectetur.</span>
+    </section>
+
+    <section class="b">
+        <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur modi dolore enim iure est dolorum animi
+            deserunt optio ab! Rerum, aut voluptatum nostrum provident temporibus repellendus eveniet, commodi laborum
+            harum unde modi voluptatem aliquam? Fuga dicta quos voluptates necessitatibus iure dolorum corporis odit
+            explicabo. Tempore enim, unde inventore ad esse ducimus pariatur, laboriosam odit amet velit voluptates
+            fugit voluptatibus quasi omnis sed illum dolorem soluta sint? Facere eveniet mollitia, sequi repudiandae
+            illum quos incidunt fuga delectus ad repellendus qui unde iste temporibus autem, ut minus, nemo dolores
+            facilis nesciunt voluptas distinctio! Pariatur ea nisi nihil nobis quod sunt laborum consectetur.</span>
+
+        <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur modi dolore enim iure est dolorum animi
+            deserunt optio ab! Rerum, aut voluptatum nostrum provident temporibus repellendus eveniet, commodi laborum
+            harum unde modi voluptatem aliquam? Fuga dicta quos voluptates necessitatibus iure dolorum corporis odit
+            explicabo. Tempore enim, unde inventore ad esse ducimus pariatur, laboriosam odit amet velit voluptates
+            fugit voluptatibus quasi omnis sed illum dolorem soluta sint? Facere eveniet mollitia, sequi repudiandae
+            illum quos incidunt fuga delectus ad repellendus qui unde iste temporibus autem, ut minus, nemo dolores
+            facilis nesciunt voluptas distinctio! Pariatur ea nisi nihil nobis quod sunt laborum consectetur.</span>
+    </section>
+
+    <section class="a">
+        <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur modi dolore enim iure est dolorum animi
+            deserunt optio ab! Rerum, aut voluptatum nostrum provident temporibus repellendus eveniet, commodi laborum
+            harum unde modi voluptatem aliquam? Fuga dicta quos voluptates necessitatibus iure dolorum corporis odit
+            explicabo. Tempore enim, unde inventore ad esse ducimus pariatur, laboriosam odit amet velit voluptates
+            fugit voluptatibus quasi omnis sed illum dolorem soluta sint? Facere eveniet mollitia, sequi repudiandae
+            illum quos incidunt fuga delectus ad repellendus qui unde iste temporibus autem, ut minus, nemo dolores
+            facilis nesciunt voluptas distinctio! Pariatur ea nisi nihil nobis quod sunt laborum consectetur.</span>
+
+        <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur modi dolore enim iure est dolorum animi
+            deserunt optio ab! Rerum, aut voluptatum nostrum provident temporibus repellendus eveniet, commodi laborum
+            harum unde modi voluptatem aliquam? Fuga dicta quos voluptates necessitatibus iure dolorum corporis odit
+            explicabo. Tempore enim, unde inventore ad esse ducimus pariatur, laboriosam odit amet velit voluptates
+            fugit voluptatibus quasi omnis sed illum dolorem soluta sint? Facere eveniet mollitia, sequi repudiandae
+            illum quos incidunt fuga delectus ad repellendus qui unde iste temporibus autem, ut minus, nemo dolores
+            facilis nesciunt voluptas distinctio! Pariatur ea nisi nihil nobis quod sunt laborum consectetur.</span>
+    </section>
+
+    <section class="b">
+        <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur modi dolore enim iure est dolorum animi
+            deserunt optio ab! Rerum, aut voluptatum nostrum provident temporibus repellendus eveniet, commodi laborum
+            harum unde modi voluptatem aliquam? Fuga dicta quos voluptates necessitatibus iure dolorum corporis odit
+            explicabo. Tempore enim, unde inventore ad esse ducimus pariatur, laboriosam odit amet velit voluptates
+            fugit voluptatibus quasi omnis sed illum dolorem soluta sint? Facere eveniet mollitia, sequi repudiandae
+            illum quos incidunt fuga delectus ad repellendus qui unde iste temporibus autem, ut minus, nemo dolores
+            facilis nesciunt voluptas distinctio! Pariatur ea nisi nihil nobis quod sunt laborum consectetur.</span>
+
+        <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur modi dolore enim iure est dolorum animi
+            deserunt optio ab! Rerum, aut voluptatum nostrum provident temporibus repellendus eveniet, commodi laborum
+            harum unde modi voluptatem aliquam? Fuga dicta quos voluptates necessitatibus iure dolorum corporis odit
+            explicabo. Tempore enim, unde inventore ad esse ducimus pariatur, laboriosam odit amet velit voluptates
+            fugit voluptatibus quasi omnis sed illum dolorem soluta sint? Facere eveniet mollitia, sequi repudiandae
+            illum quos incidunt fuga delectus ad repellendus qui unde iste temporibus autem, ut minus, nemo dolores
+            facilis nesciunt voluptas distinctio! Pariatur ea nisi nihil nobis quod sunt laborum consectetur.</span>
+    </section>
+
+    <section class="a">
+        <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur modi dolore enim iure est dolorum animi
+            deserunt optio ab! Rerum, aut voluptatum nostrum provident temporibus repellendus eveniet, commodi laborum
+            harum unde modi voluptatem aliquam? Fuga dicta quos voluptates necessitatibus iure dolorum corporis odit
+            explicabo. Tempore enim, unde inventore ad esse ducimus pariatur, laboriosam odit amet velit voluptates
+            fugit voluptatibus quasi omnis sed illum dolorem soluta sint? Facere eveniet mollitia, sequi repudiandae
+            illum quos incidunt fuga delectus ad repellendus qui unde iste temporibus autem, ut minus, nemo dolores
+            facilis nesciunt voluptas distinctio! Pariatur ea nisi nihil nobis quod sunt laborum consectetur.</span>
+
+        <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur modi dolore enim iure est dolorum animi
+            deserunt optio ab! Rerum, aut voluptatum nostrum provident temporibus repellendus eveniet, commodi laborum
+            harum unde modi voluptatem aliquam? Fuga dicta quos voluptates necessitatibus iure dolorum corporis odit
+            explicabo. Tempore enim, unde inventore ad esse ducimus pariatur, laboriosam odit amet velit voluptates
+            fugit voluptatibus quasi omnis sed illum dolorem soluta sint? Facere eveniet mollitia, sequi repudiandae
+            illum quos incidunt fuga delectus ad repellendus qui unde iste temporibus autem, ut minus, nemo dolores
+            facilis nesciunt voluptas distinctio! Pariatur ea nisi nihil nobis quod sunt laborum consectetur.</span>
+    </section>
+    <script src="../JS/scroll.js"></script>
+    <script src="../JS/carrossel.js"></script>
+    <script src="../JS/nav.js"></script>
+    <script src="../JS/infinitCarrossel.js"></script>
+</body>
+
+
+
+</html>
