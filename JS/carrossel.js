@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         buttons.forEach((button, i) => {
             if (i === index) {
-                button.style.padding = "7px 20dvw";
+                button.style.padding = "8px 20dvw";
                 button.style.backgroundColor = "";
             } else {
                 button.style.backgroundColor = "white"; // Reset to default color

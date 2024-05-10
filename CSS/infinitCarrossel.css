@@ -1,0 +1,62 @@
+.logos {
+  background-color: var(--azulBebe);
+  overflow: hidden;
+  padding: 50px 0;
+  position: relative;
+  white-space: nowrap;
+}
+
+.logos-slide {
+  display: inline-block;
+  animation: slide 35s linear infinite;
+
+}
+
+rect {
+  fill: white;
+}
+
+.logos:hover .logos-slide {
+  animation-play-state: paused;
+}
+
+
+.logos-slide img {
+  width: 6rem;
+  margin: 0 15px;
+  transition: transform 0.5s;
+  filter: drop-shadow(rgb(0, 0, 0) 0.1rem 0.1rem 0.1rem);
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.logos:before,
+.logos:after {
+  position: absolute;
+  top: 0;
+  width: 10%;
+  height: 100%;
+  content: "";
+  z-index: 2;
+}
+
+.logos:before {
+  right: 0;
+  background: linear-gradient(to right, transparent, var(--azulBebe));
+}
+
+.logos:after {
+  left: 0;
+  background: linear-gradient(to left, transparent, var(--azulBebe));
+}

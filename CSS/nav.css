@@ -3,24 +3,37 @@ nav{
     top: 0;
     left: 0;
     width: 100%;
+    height: 5dvh;
     z-index: 100;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 5px;
     color: var(--textoClaro);
     transition: background-color 0.3s;
 }
 
-a, i {
+nav a, i {
     color:var(--textoClaro);
 }
-.navbar-blue {
+.azulFundo {
+    a,i{
+        color: white;
+    }
     background-color: var(--azulFundo); 
     color: white;
 }
 
-.navbar-white {
+.branco{
+    a,i{
+        color: black;
+    }
     background-color: white; 
+    color: black; 
+}
+
+.transparente > a i{
+    background-color: red; 
     color: black; 
 }
 nav ul {
@@ -45,8 +58,8 @@ button {
     cursor: pointer;
 }
 
-i.fas,
-i.fab {
+nav i.fas,
+nav i.fab {
     font-size: 2rem;
 }
 
