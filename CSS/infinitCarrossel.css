@@ -10,7 +10,7 @@
 
 .logos-slide {
   display: inline-block;
-  animation: slide 35s linear infinite;  
+  animation: slide 10s linear infinite;  
 }
 
 .logos:hover .logos-slide {
@@ -108,5 +108,10 @@
     & h1{
       font-size: 1.5rem;
     }
+  }
+
+  .logos-slide {
+    display: inline-block;
+    animation: slide 20s linear infinite;  
   }
 }

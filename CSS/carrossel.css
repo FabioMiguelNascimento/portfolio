@@ -1,6 +1,6 @@
 .carrossel {
-    width: 100%;
-    height: 100vh;
+    width: 100svw;
+    height: 100svh;
     position: relative;
     overflow: hidden;
 }
@@ -135,12 +135,12 @@
 @media (max-width: 768px) {
     #fotoSlide-1 {
         height: 70%;
-        right: -50%;
+        right: -40%;
     }
 
     #fotoSlide-2 {
         top: 0;
-        height: 70%;
+        height: 60%;
         width: 100%;
     }
 
@@ -155,7 +155,7 @@
 
     #textoSlide-2 h1 {
         font-size: 2rem;
-        padding: 1rem;
+        padding: .5rem;
     }
 
     #textoSlide-2 span {
