@@ -1,33 +1,34 @@
 window.addEventListener('scroll', function() {
-    var navbar = document.getElementById('navbar');
-    var header = document.getElementById('header');
-    var sectionsA = document.getElementsByClassName('a');
-    var sectionsB = document.getElementsByClassName('b');
-    
-    navbar.classList.remove('azulFundo');
-    navbar.classList.remove('branco');
-    navbar.classList.remove('transparente');
+    var navbar = document.querySelector('.primary-header');
+    var navbarHeight = navbar.offsetHeight;
+    var windowHeight = window.innerHeight;
+    var scrollPosition = window.scrollY;
 
-    if (window.scrollY <= header.offsetTop) {
-        navbar.classList.add('transparente');
+    navbar.classList.remove('azulFundo');
+    navbar.classList.remove('brancoFundo');
+    navbar.classList.remove('transparenteFundo');
+
+    // Verificar se a navbar está no topo da página
+    if (scrollPosition <= navbarHeight + 5 * windowHeight / 100) {
+        navbar.classList.add('transparenteFundo');
         return;
     }
 
+    var sectionsA = document.getElementsByClassName('a');
     for (var i = 0; i < sectionsA.length; i++) {
         var sectionAposition = sectionsA[i].getBoundingClientRect();
-        if (sectionAposition.top <= 0 && sectionAposition.bottom >= 0) {
+        if (sectionAposition.top <= navbarHeight + 5 * windowHeight / 100 && sectionAposition.bottom >= navbarHeight + 5 * windowHeight / 100) {
             navbar.classList.add('azulFundo');
-            return; 
+            return;
         }
     }
 
+    var sectionsB = document.getElementsByClassName('b');
     for (var i = 0; i < sectionsB.length; i++) {
         var sectionBposition = sectionsB[i].getBoundingClientRect();
-        if (sectionBposition.top <= 0 && sectionBposition.bottom >= 0) {
-            navbar.classList.add('branco');
-            return; 
+        if (sectionBposition.top <= navbarHeight + 5 * windowHeight / 100 && sectionBposition.bottom >= navbarHeight + 5 * windowHeight / 100) {
+            navbar.classList.add('brancoFundo');
+            return;
         }
     }
-
-       
 });

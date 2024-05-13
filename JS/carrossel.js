@@ -6,6 +6,7 @@ document.addEventListener("DOMContentLoaded", function () {
     let interval;
     let isDragging = false;
     let initialPosition = 0;
+    let startX, startY, distX, distY;
 
     function changePhoto(index) {
         const currentPhoto = fotos[currentIndex];
@@ -19,7 +20,6 @@ document.addEventListener("DOMContentLoaded", function () {
             currentPhoto.style.transform = `translateX(-100%)`; 
             newPhoto.style.transition = "transform 0.3s ease";
             newPhoto.style.transform = `translateX(0)`; 
-            console.log(index);
         } else {
             currentPhoto.style.transition = "transform 0.3s ease";
             currentPhoto.style.transform = `translateX(100%)`; 
@@ -32,11 +32,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
         buttons.forEach((button, i) => {
             if (i === index) {
-                button.style.padding = "8px 20dvw";
+                button.style.padding = "4px 20dvw";
                 button.style.backgroundColor = "";
             } else {
                 button.style.backgroundColor = "white"; // Reset to default color
-                button.style.padding = "5px 10dvw";
+                button.style.padding = "2px 10dvw";
             }
         });
     }
@@ -78,9 +78,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
     function handleDragStart(e) {
         isDragging = true;
-        initialPosition = e.type === "mousedown" ? e.clientX : e.touches[0].clientX;
+        startX = e.type === "mousedown" ? e.clientX : e.touches[0].clientX;
+        startY = e.type === "mousedown" ? e.clientY : e.touches[0].clientY;
+        initialPosition = startX;
         carrossel.style.transition = "";
-        e.preventDefault();
     }
 
     document.addEventListener("mouseup", handleDragEnd);
@@ -99,13 +100,21 @@ document.addEventListener("DOMContentLoaded", function () {
     function handleDragMove(e) {
         if (isDragging) {
             const clientX = e.type === "mousemove" ? e.clientX : e.touches[0].clientX;
-            const movement = clientX - initialPosition;
-            const newIndex = currentIndex - Math.sign(movement);
-            const newIndexClamped = Math.min(Math.max(newIndex, 0), fotos.length - 1);
-            if (newIndexClamped !== currentIndex) {
-                changePhoto(newIndexClamped);
+            const clientY = e.type === "mousemove" ? e.clientY : e.touches[0].clientY;
+            distX = clientX - startX;
+            distY = clientY - startY;
+
+            // Check if user is dragging horizontally
+            if (Math.abs(distX) > Math.abs(distY)) {
+                e.preventDefault();
+                const movement = clientX - initialPosition;
+                const newIndex = currentIndex - Math.sign(movement);
+                const newIndexClamped = Math.min(Math.max(newIndex, 0), fotos.length - 1);
+                if (newIndexClamped !== currentIndex) {
+                    changePhoto(newIndexClamped);
+                }
+                isDragging = false;
             }
-            isDragging = false;
         }
     }
 

@@ -2,18 +2,15 @@
   background-color: var(--azulBebe);
   overflow: hidden;
   padding: 50px 0;
-  position: relative;
   white-space: nowrap;
+  bottom: 0;
+  position: absolute;
+  width: 100%;
 }
 
 .logos-slide {
   display: inline-block;
-  animation: slide 35s linear infinite;
-
-}
-
-rect {
-  fill: white;
+  animation: slide 35s linear infinite;  
 }
 
 .logos:hover .logos-slide {
@@ -59,4 +56,16 @@ rect {
 .logos:after {
   left: 0;
   background: linear-gradient(to left, transparent, var(--azulBebe));
+}
+
+.textos{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+}
+.conteiner{
+  height: 50vh;
+  position: relative;
 }
