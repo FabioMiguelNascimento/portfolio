@@ -24,18 +24,19 @@
 
     <header id="navbar" class="primary-header flex">
         <span class="logo">Fábio</span>
-        
+
         <button aria-controls="primary-navigation" aria-expanded="false" class="mobile-nav-toggle">
         </button>
 
         <nav>
-                
+
             <ul data-visible="false" id="primary-navigation" class="primary-navigation flex">
                 <li><a href="#linguagens">Linguagens</a></li>
                 <li><a href="#projetos">Projetos</a></li>
                 <li><a href="#contato">Contato</a></li>
                 <li><a href="https://github.com/F4bi0zin" target="_blank"><i class="fab fa-github"></i> </a></li>
-                <li><a href="https://www.linkedin.com/in/fab-nascimento/" target="_blank"><i class="fab fa-linkedin"></i> </a></li>
+                <li><a href="https://www.linkedin.com/in/fab-nascimento/" target="_blank"><i
+                            class="fab fa-linkedin"></i> </a></li>
                 <li><a><i id="settings" class="fas fa-cog"></i></a></li>
             </ul>
         </nav>
@@ -46,7 +47,7 @@
         <div class="carrossel">
 
             <div class="foto" id="foto1">
-                <div class="texto">
+                <div class="texto" id="textoSlide-1">
                     <h1>Fábio Miguel Nascimento</h1>
                     <span>Full Stack Developer</span>
                     <div class="icons"></div>
@@ -54,17 +55,24 @@
                     <a href="https://www.linkedin.com/in/fab-nascimento/" target="_blank"><i
                             class="fab fa-linkedin"></i></a>
                 </div>
+                <div class="fotoDisplay" id="fotoSlide-1"></div>
             </div>
 
             <div class="foto" id="foto2">
                 <div class="fundo">
-                    <div class="texto">
+                    <div class="texto" id="textoSlide-2">
                         <h1>Quem eu sou</h1>
-                        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos pariatur quam praesentium
-                            tenetur consequuntur inventore tempore et facilis. Quis, nihil molestias repudiandae fuga
-                            tempore possimus laborum hic iure voluptatibus est?</span>
+                        <span>Desde a infância, tenho mantido um forte envolvimento com o universo da tecnologia,
+                            despertando um interesse pela programação desde cedo. Ao longo dos anos, desenvolvi
+                            habilidades na criação de pequenos códigos e funções. Atualmente, aos 19 anos, estou
+                            buscando oportunidades no mercado de tecnologia. Tenho um grande apreço por videogames e um
+                            profundo interesse em desenvolvimento web, especialmente utilizando <b>HTML</b>, <b>CSS</b>,
+                            <b>JavaScript</b>,
+                            <b>React</b>, além do desenvolvimento de software com <b>Java</b>, <b>Spring Boot</b> e
+                            <b>C#</b>.</span>
                     </div>
                 </div>
+                <div class="fotoDisplay" id="fotoSlide-2"></div>
             </div>
         </div>
 
@@ -73,7 +81,6 @@
             <button class="btn-carrossel" data-index="0" id="btn-1"></button>
             <button class="btn-carrossel" data-index="1" id="btn-2"></button>
         </div>
-        </div>
     </section>
 
 
@@ -81,23 +88,51 @@
         <div class="conteiner">
             <div class="textos">
                 <h1>Linguagens</h1>
-                <span>Essas sao algumas das linguagens e frameworks que tenho me profissionalizado ao longo dos
+                <span>Essas sao algumas das <b>linguagens</b> e <b>frameworks</b> que tenho me profissionalizado ao
+                    longo dos
                     anos</span>
             </div>
             <div class="logos">
                 <div class="logos-slide">
-                    <img src="./icons/csharp.svg" alt="C#">
-                    <img src="./icons/css3.svg" alt="CSS">
-                    <img src="./icons/figma.svg" alt="Figma">
-                    <img src="./icons/git.svg" alt="Git">
-                    <img src="./icons/html.svg" alt="HTML">
-                    <img src="./icons/java.svg" alt="Java">
-                    <img src="./icons/javascript.svg" alt="JavaScript">
-                    <img src="./icons/mysql.svg" alt="MySQL">
-                    <img src="./icons/node.svg" alt="Node.js">
-                    <img src="./icons/php01.svg" alt="PHP">
-                    <img src="./icons/python.svg" alt="Python">
-                    <img src="./icons/react.svg" alt="React">
+                    <div class="tooltip">
+                        <img src="./icons/csharp.svg"  alt="C#"><span class="tooltiptext">C#</span>
+                    </div>
+                    <div class="tooltip">
+                        <img src="./icons/css3.svg"  alt="CSS"><span class="tooltiptext">CSS</span>
+                    </div>
+                    <div class="tooltip">
+                        <img src="./icons/figma.svg"  alt="Figma"><span class="tooltiptext">Figma</span>
+                    </div>
+                    <div class="tooltip">
+                        <img src="./icons/git.svg"  alt="Git"><span class="tooltiptext">Git</span>
+                    </div>
+                    <div class="tooltip">
+                        <img src="./icons/html.svg"  alt="HTML"><span class="tooltiptext">HTML</span>
+                    </div>
+                    <div class="tooltip">
+                        <img src="./icons/java.svg"  alt="Java"><span class="tooltiptext">Java</span>
+                    </div>
+                    <div class="tooltip">
+                        <img src="./icons/javascript.svg"  alt="JavaScript"><span
+                            class="tooltiptext">JavaScript</span>
+                    </div>
+                    <div class="tooltip">
+                        <img src="./icons/mysql.svg"  alt="MySQL"><span class="tooltiptext">MySQL</span>
+                    </div>
+                    <div class="tooltip">
+                        <img src="./icons/node.svg"  alt="Node.js"><span
+                            class="tooltiptext">Node.js</span>
+                    </div>
+                    <div class="tooltip">
+                        <img src="./icons/php01.svg"  alt="PHP"><span class="tooltiptext">PHP</span>
+                    </div>
+                    <div class="tooltip">
+                        <img src="./icons/python.svg"  alt="Python"><span
+                            class="tooltiptext">Python</span>
+                    </div>
+                    <div class="tooltip">
+                        <img src="./icons/react.svg"  alt="React"><span class="tooltiptext">React</span>
+                    </div>
                 </div>
             </div>
         </div>
@@ -229,7 +264,7 @@
             facilis nesciunt voluptas distinctio! Pariatur ea nisi nihil nobis quod sunt laborum consectetur.</span>
     </section>
 
-    <script src="./JS/scroll.js" ></script>
+    <script src="./JS/scroll.js"></script>
     <script src="./JS/carrossel.js"></script>
     <script src="./JS/nav.js"></script>
     <script src="./JS/infinitCarrossel.js"></script>

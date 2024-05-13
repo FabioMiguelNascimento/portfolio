@@ -72,7 +72,7 @@ a {
     text-decoration: none;
     font-weight: 700;
     margin-inline-end: .5em;
-    font-size: 1.5rem;
+    font-size: 1rem;
     transition: 500ms;
     & i{
         font-size: 2rem;
@@ -87,8 +87,12 @@ li:hover {
 .mobile-nav-toggle {
     display: none;
 }
+@media (max-width: 737){
 
-@media (max-width: 35em) {
+}
+
+
+@media (max-width: 736px) {
     .primary-navigation {
         --gap: 2em;
 

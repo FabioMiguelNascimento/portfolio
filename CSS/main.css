@@ -30,9 +30,6 @@ html {
   scroll-snap-type:both proximity;
 }
 
-h1{
-  font-size: 3rem;
-}
 
 :root {
   --azulBebe: #6BC0FD;

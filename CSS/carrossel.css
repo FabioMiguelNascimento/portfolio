@@ -1,26 +1,62 @@
-
-
-.carrossel{
+.carrossel {
     width: 100%;
     height: 100vh;
     position: relative;
-    overflow: hidden; 
+    overflow: hidden;
 }
 
+/* ==Texto== */
+#textoSlide-1 {
+    position: absolute;
+    left: 10%;
+    color: #f2f2f2;
+    z-index: 3;
+    font-size: 2rem;
+    line-height: 2.5rem;
 
-.texto{
-    color:#f2f2f2;
+    & span {
+        font-size: 80%;
+        font-style: italic;
+    }
+}
+
+/* Texto slide 2 */
+
+.fundo {
+    z-index: 5;
+    background-color: var(--azulClaro);
+    border-radius: 5px;
+    width: 35%;
+    height: 80%;
+    position: absolute;
+    bottom: 1;
+    top: 1;
+    right: 0;
+    transform: translate(0, 0);
     text-align: center;
-    backdrop-filter: blur(5px);
-    padding: 20px;
+}
+
+#textoSlide-2 {
+    padding: 1rem 2rem;
+    line-height: 1.5rem;
+}
+
+#textoSlide-2 h1 {
+    font-size: 3rem;
+    padding: 1rem;
+}
+
+#textoSlide-2 span {
+    font-size: 1rem;
 }
 
 
-.foto{
+/* ==Fundo== */
+.foto {
     width: 100%;
     height: 100%;
 
-    
+
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -32,20 +68,19 @@
 
     cursor: pointer;
 }
-#foto1{
+
+#foto1 {
     background-color: var(--azulFundo);
-    z-index: 2;
+    transition: 500ms;
 }
 
-#foto2{
+#foto2 {
     background-color: var(--azulMedio);
-    z-index: 1;
+    transition: 500ms;
 }
 
-
-
-
-.botoes{
+/* ==Botoes== */
+.botoes {
     z-index: 99;
     display: flex;
     align-items: center;
@@ -57,21 +92,90 @@
     bottom: 0;
     right: 0;
     left: 0;
-    padding-bottom:20px ;
+    padding-bottom: 20px;
 }
 
-[id^="btn-"]{
-    padding: 2px 100px;
-    background-color:  var(--azulClaro);
-    border:none;
+[id^="btn-"] {
+    background-color: var(--azulBebe);
+    border: none;
     transition: 200ms;
 }
 
+/* ==Foto== */
+
+/* Foto primeiro slide */
+#fotoSlide-1 {
+    height: 70%;
+    bottom: 0;
+    right: 0;
+    background-image: url("../assets/FotoNoBG.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    aspect-ratio: 1;
+}
+
+/*  Foto segundo slide */
+
+#fotoSlide-2 {
+    height: 100%;
+    width: 70%;
+    bottom: 0;
+    left: 0;
+    background-image: url("../assets/fotoSobre.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+}
+
+
 /* Celular */
 @media (max-width: 768px) {
+    #fotoSlide-1 {
+        height: 70%;
+        right: -50%;
+    }
 
+    #fotoSlide-2 {
+        top: 0;
+        height: 70%;
+        width: 100%;
+    }
 
-    .texto {
-        width: 70%;
+    .fundo {
+        z-index: 5;
+        width: 100%;
+        height: 40%;
+        position: absolute;
+        bottom: 0;
+        text-align: center;
+    }
+
+    #textoSlide-2 h1 {
+        font-size: 2rem;
+        padding: 1rem;
+    }
+
+    #textoSlide-2 span {
+        font-size: .8rem;
+    }
+
+    #textoSlide-2 {
+        line-height: 1.3rem;
+        padding: 0;
+    }
+
+    .botoes {
+        gap: .5rem;
+        opacity: .5 !important;
+    }
+
+    [id^="btn-"] {
+        background-color: var(--azulBebe);
+        border-radius: 50% !important;
+        transition: 200ms;
+        padding: 1rem 1rem !important;
     }
 }
