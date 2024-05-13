@@ -115,7 +115,6 @@ li:hover {
     .mobile-nav-toggle {
         display: block;
         position: absolute;
-        top: 1;
         right: 1rem;
         z-index: 9999;
         width: 2rem;
