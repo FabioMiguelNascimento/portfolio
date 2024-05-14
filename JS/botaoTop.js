@@ -2,7 +2,7 @@ window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
   var btn = document.getElementById("back-to-top-btn");
-  if (window.pageYOffset > 20) {
+  if (window.scrollY > 20) {
     btn.style.opacity = "1";
     btn.style.visibility = "visible";
   } else {

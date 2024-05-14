@@ -14,6 +14,7 @@
     cursor: pointer;
     z-index: 1000;
     transition: 300ms;
+    color: var(--textoClaro);
 }
 
     @keyframes rotate {
@@ -31,4 +32,3 @@
             animation: rotate 0.5s linear alternate;
         }
     }
-}
