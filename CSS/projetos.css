@@ -1,0 +1,107 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 1rem;
+    --pad:1rem;
+}
+
+.box {
+    width: calc(33% - 1rem);
+    height: 500px; /* Defina uma altura específica */
+    background: var(--azulClaro);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5px;
+    position: relative;
+    margin: 1rem 0;
+}
+
+.image {
+    width: 100%;
+    height: 40%; 
+    background: var(--brancoFundo);
+    filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.1));
+    border-radius: 5px 5px 0 0;
+    cursor: pointer;
+    transition: 300ms;
+}
+
+.image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.image:hover {
+    filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.2));
+    scale: 1.05;
+}
+
+.box p {
+    text-align: justify;
+    margin-top: 8px;
+    font-size: 16px;
+    font-weight: 400;
+    padding: var(--pad);
+}
+
+.box .nome {
+    margin-top: .1rem;
+    color: var(--textoClaro);
+    font-size: 1.5rem;
+    font-weight: 700;
+    z-index: 2;
+}
+
+.btns {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    padding: var(--pad);
+}
+
+.btns button {
+    background: #ffffff;
+    width: 100%;
+    padding: 9px 0px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 400;
+    color:var(--textoEscuro);
+    transition: 300ms
+}
+
+.btns button:hover {
+    background: var(--azulMedio);
+    color: var(--textoClaro);
+    scale: 1.02;
+}
+
+.btns button:first-child {
+    margin-right: 5px;
+}
+
+.btns button:last-child {
+    margin-left: 5px;
+}
+
+@media (max-width:1045px) {
+    .container .box {
+        width: calc(50% - 10px);
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width:710px) {
+    .container .box {
+        width: 100%;
+    }
+}

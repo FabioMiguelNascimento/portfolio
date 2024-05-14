@@ -6,7 +6,7 @@
 }
 
 section {
-  scroll-margin-top: 4.5dvh;
+  scroll-margin-top: 6.5dvh;
   scroll-snap-align: start;
 }
 
@@ -28,6 +28,7 @@ body::-webkit-scrollbar {
 html {
   scrollbar-width: none;
   scroll-snap-type: y proximity;
+  scroll-behavior: smooth;
 }
 
 
@@ -42,6 +43,11 @@ html {
   --gap: 1rem;
 }
 
+@media (max-width: 768px) {
+  html{
+    scroll-snap-type: none;
+  }
+}
 
 .poppins-thin {
   font-family: "Poppins", sans-serif;

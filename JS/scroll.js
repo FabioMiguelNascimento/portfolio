@@ -7,9 +7,8 @@ window.addEventListener('scroll', function() {
     navbar.classList.remove('azulFundo');
     navbar.classList.remove('brancoFundo');
     navbar.classList.remove('transparenteFundo');
-
     // Verificar se a navbar está no topo da página
-    if (scrollPosition <= navbarHeight + 5 * windowHeight / 100) {
+    if (scrollPosition <= navbarHeight + 6.5 * windowHeight / 100) {
         navbar.classList.add('transparenteFundo');
         return;
     }
@@ -17,7 +16,7 @@ window.addEventListener('scroll', function() {
     var sectionsA = document.getElementsByClassName('a');
     for (var i = 0; i < sectionsA.length; i++) {
         var sectionAposition = sectionsA[i].getBoundingClientRect();
-        if (sectionAposition.top <= navbarHeight + 5 * windowHeight / 100 && sectionAposition.bottom >= navbarHeight + 5 * windowHeight / 100) {
+        if (sectionAposition.top <= navbarHeight + 6.5 * windowHeight / 100 && sectionAposition.bottom >= navbarHeight + 6.5 * windowHeight / 100) {
             navbar.classList.add('azulFundo');
             return;
         }
@@ -26,7 +25,7 @@ window.addEventListener('scroll', function() {
     var sectionsB = document.getElementsByClassName('b');
     for (var i = 0; i < sectionsB.length; i++) {
         var sectionBposition = sectionsB[i].getBoundingClientRect();
-        if (sectionBposition.top <= navbarHeight + 5 * windowHeight / 100 && sectionBposition.bottom >= navbarHeight + 5 * windowHeight / 100) {
+        if (sectionBposition.top <= navbarHeight + 6.5 * windowHeight / 100 && sectionBposition.bottom >= navbarHeight + 6.5 * windowHeight / 100) {
             navbar.classList.add('brancoFundo');
             return;
         }
