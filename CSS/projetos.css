@@ -1,107 +1,174 @@
 .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    padding: 1rem;
-    --pad:1rem;
-}
-
-.box {
-    width: calc(33% - 1rem);
-    height: 500px; /* Defina uma altura específica */
-    background: var(--azulClaro);
+    margin: 50px;
+    width: calc(100% - 100px);
     display: flex;
     flex-direction: column;
     align-items: center;
-    border-radius: 5px;
+}
+
+.box {
+    width: 80%;
+    max-width: 800px;
+    height: auto;
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     position: relative;
-    margin: 1rem 0;
+    overflow: hidden;
+    background-color: var(--brancoFundo);
+}
+
+.esquerda {
+    margin-right: auto;
+    margin-left: 5%;
+}
+
+.direita {
+    margin-left: auto;
+    margin-right: 5%;
 }
 
 .image {
     width: 100%;
-    height: 40%; 
-    background: var(--brancoFundo);
-    filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.1));
-    border-radius: 5px 5px 0 0;
-    cursor: pointer;
-    transition: 300ms;
+    height: auto;
 }
 
-.image img {
+
+.box img {
+    width: 100%;
+    height: 100%;
+    object-fit:scale-down;
+}
+
+
+.detalhes {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     height: 100%;
     width: 100%;
-    object-fit: cover;
+    box-sizing: border-box;
+    color: var(--textoEscuro);
 }
 
-.image:hover {
-    filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.2));
-    scale: 1.05;
+.direita .image {
+    order: 2;
 }
 
-.box p {
-    text-align: justify;
-    margin-top: 8px;
-    font-size: 16px;
-    font-weight: 400;
-    padding: var(--pad);
+.direita .detalhes {
+    text-align: right;
 }
 
-.box .nome {
-    margin-top: .1rem;
-    color: var(--textoClaro);
-    font-size: 1.5rem;
-    font-weight: 700;
-    z-index: 2;
+.box ul {
+    display: flex;
+    font-weight: bold;
+    font-style: italic;
+    gap: 10px;
+    flex-wrap: wrap;
+    color: var(--textoEscuro);
+}
+
+.box ul li {
+    background-color: var(--azulMedio);
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.direita ul {
+    justify-content: flex-end;
+}
+
+.direita .descricao {
+    margin-left: auto;
 }
 
 .btns {
     display: flex;
-    justify-content: space-between;
-    width: 100%;
-    position: absolute;
-    bottom: 0;
-    padding: var(--pad);
+    flex-direction: column;
+    align-items: flex-end;
 }
 
-.btns button {
-    background: #ffffff;
+.box button {
+    padding: 10px;
     width: 100%;
-    padding: 9px 0px;
-    outline: none;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 1rem;
-    font-weight: 400;
-    color:var(--textoEscuro);
-    transition: 300ms
-}
-
-.btns button:hover {
-    background: var(--azulMedio);
+    background-color: var(--azulMedio);
     color: var(--textoClaro);
-    scale: 1.02;
+    border: none;
+    cursor: pointer;
+    font: 1.2rem var(--textoEscuro);
+    transition: 0.3s;
 }
 
-.btns button:first-child {
-    margin-right: 5px;
+.box button:hover {
+    background-color: var(--azulClaro);
+    color: var(--textoClaro);
 }
 
-.btns button:last-child {
-    margin-left: 5px;
-}
 
-@media (max-width:1045px) {
-    .container .box {
-        width: calc(50% - 10px);
-        margin-bottom: 20px;
+@media (min-width: 768px) {
+    .box {
+        flex-direction: row;
+        height: 40vh;
+    }
+
+    .image {
+        width: 40%;
+        height: 100%;
+    }
+
+    .detalhes {
+        width: 60%;
+    }
+
+    .btns {
+        align-items: flex-start;
     }
 }
 
-@media (max-width:710px) {
-    .container .box {
+@media (max-width: 767px) {
+    .box {
+        flex-direction: column;
+        height: auto;
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .image,
+    .detalhes {
         width: 100%;
+    }
+
+    .btns {
+        align-items: center;
+    }
+
+    .descricao,
+    .techstack {
+        padding: 10px 0;
+    }
+
+    .esquerda {
+        margin-right: 0;
+        margin-left: 5%;
+    }
+
+    .direita {
+        margin-left: 5%;
+        margin-right: 0;
+    }
+
+    .direita .image {
+        order: 0;
+    }
+
+    .direita .detalhes {
+        text-align: left;
+    }
+
+    .direita ul {
+        justify-content: flex-start;
     }
 }

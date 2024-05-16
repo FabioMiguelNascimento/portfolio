@@ -79,8 +79,9 @@
 .tooltip {
   position: relative;
   display: inline-block;
+  z-index: 1;
+  
 }
-
 /* Tooltip text */
 .tooltip .tooltiptext {
   visibility: hidden;
@@ -90,9 +91,14 @@
   text-align: center;
   padding: 5px 0;
   border-radius: 6px;
- 
+  
   position: absolute;
-  z-index: 1000;
+}
+
+.tooltiptext {
+  top: 100%;
+  left: 50%;
+  margin-left: -60px;
 }
 
 .tooltip:hover .tooltiptext {

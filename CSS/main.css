@@ -10,6 +10,10 @@ section {
   scroll-snap-align: start;
 }
 
+.box{
+  scroll-snap-align: center;
+}
+
 .b {
   background-color: var(--brancoFundo);
   color: var(--textoEscuro)
@@ -29,6 +33,11 @@ html {
   scrollbar-width: none;
   scroll-snap-type: y proximity;
   scroll-behavior: smooth;
+}
+
+ul{
+  list-style: none;
+
 }
 
 
