@@ -106,7 +106,7 @@
     color: var(--textoClaro);
 }
 
-
+/* Media Queries para responsividade */
 @media (min-width: 768px) {
     .box {
         flex-direction: row;
@@ -131,13 +131,12 @@
     .box {
         flex-direction: column;
         height: auto;
-        width: 90%;
-        margin-left: 5%;
-        margin-right: 5%;
+        width: 98%; 
+        margin-left: 1%; 
+        margin-right: 1%; 
     }
 
-    .image,
-    .detalhes {
+    .image, .detalhes {
         width: 100%;
     }
 
@@ -145,19 +144,19 @@
         align-items: center;
     }
 
-    .descricao,
-    .techstack {
+    .descricao, .techstack {
         padding: 10px 0;
     }
 
     .esquerda {
-        margin-right: 0;
-        margin-left: 5%;
+        margin-left: 1%;
+        margin-right: 1%;
     }
-
+    
     .direita {
-        margin-left: 5%;
-        margin-right: 0;
+        margin-left: 1%;
+        margin-right: 1%;
+        text-align: left;
     }
 
     .direita .image {
@@ -166,9 +165,5 @@
 
     .direita .detalhes {
         text-align: left;
-    }
-
-    .direita ul {
-        justify-content: flex-start;
     }
 }
