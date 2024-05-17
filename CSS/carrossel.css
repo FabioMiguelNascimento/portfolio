@@ -10,8 +10,7 @@
     scale: 1.1;
 }
 
-.techstack{
-    background-color: rgba(0, 0, 0, 0.19);
+#tsC{
     width: fit-content;
     & p{
         font-size: 1.5rem;

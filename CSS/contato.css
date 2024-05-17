@@ -1,0 +1,251 @@
+.containerContato {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.containerContato .textosContato {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 30%;
+    height: 80vh;
+    background-color: var(--azulClaro);
+    margin: auto;
+    color: var(--textoClaro);
+    padding: 30px;
+    z-index: 2;
+    border-radius: 10px 0 0 10px;
+    box-shadow: 0 0 3px black;
+    & h1{
+        font-size: 2.5em;
+        margin-bottom: 20px;
+    }
+}
+
+.textosContato li {
+    list-style: none;
+    padding: 0;
+    transition: 300ms;
+    & i{
+        font-size: 2.5rem;
+        margin-right: 10px;
+    }
+}
+
+.textosContato .listaContato{
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.textosContato .listaContato ul li{
+    gap: 10px;
+}
+.containerContato .form {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 30%;
+    text-align: left;
+    width: 50%;
+    height: 70vh;
+    margin: auto;
+    padding: 30px;
+    z-index: 1;
+    border-radius: 10px 0 0 10px;
+    box-shadow: 0 0 3px black;
+}
+
+
+.containerContato .form h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.form form {
+    display: grid;
+    grid-auto-columns: 1fr 1fr;
+    gap: 20px;
+    grid-template-areas:
+        "nome nome"
+        "phone email"
+        "mensagem mensagem"
+        "button .";
+    width: 100%;
+}
+
+form .nome {
+    grid-area: nome;
+}
+
+form .email {
+    grid-area: email;
+}
+
+form .phone {
+    grid-area: phone;
+}
+
+form .mensagem {
+    grid-area: mensagem;
+}
+
+form button {
+    grid-area: button;
+}
+
+
+.input {
+    position: relative;
+}
+
+label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 1.125rem;
+    transition: 300ms;
+    padding: 1rem;
+    cursor: text;
+}
+
+input:focus~label,
+textarea:focus~label {
+    cursor: text;
+    top: -2.25rem;
+    font-size: 1rem;
+}
+
+input:focus,
+textarea:focus {
+    background-color: var(--azulMedio);
+    border: solid .1px white;
+    color: var(--textoClaro);
+}
+
+input:not(:placeholder-shown)~label,
+textarea:not(:placeholder-shown)~label {
+    cursor: text;
+    top: -2.25rem;
+    font-size: 1rem;
+}
+
+.nome {
+    width: 100%;
+}
+
+.nome input {
+    width: 100%;
+    padding: 20px;
+}
+
+
+.email input,
+.phone input {
+    width: 100%;
+    padding: 20px;
+}
+
+.mensagem textarea {
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    resize: none;
+}
+
+form button {
+    width: fit-content;
+    background-color: var(--azulClaro);
+    color: var(--textoClaro);
+    padding: 5px 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    font-size: 1.25rem;
+    transition: 500ms;
+}
+
+
+form button:active {
+    background-color: lightgreen;
+    color: black;
+}
+
+@media screen and (max-width: 768px) {
+    .containerContato .textosContato {
+        width: 100%;
+        height: fit-content;
+        border-radius: 0;
+        inset: 0;
+        position: static;
+        padding: 10px;
+        & h1{
+            font-size: 1.5em;
+        }
+    }
+
+    .textosContato h1{
+        font-size: 1.5em;
+    }
+    .containerContato .form {
+        width: 100%;
+        height: fit-content;
+        inset: 0;
+        position: static;
+        padding: 20px;
+        z-index: 1;
+        & h1{
+            font-size: 1.5em;
+        }
+    }
+
+    .form form {
+        width: 100%;
+        grid-template-areas:
+            "nome nome"
+            "email email"
+            "phone phone"
+            "mensagem mensagem"
+            "button .";
+    }
+
+    form .input {
+        height: max-content;
+    }
+}
+@media screen and (max-width: 1000px) {
+    .containerContato .textosContato {
+        width: 100%;
+        height: fit-content;
+        border-radius: 0;
+        inset: 0;
+        position: relative;
+    }
+
+    .containerContato .form {
+        width: 100%;
+        height: 100%;
+        inset: 0;
+        position: relative;
+        padding: 20px;
+    }
+
+    .form form {
+        width: 100%;
+        grid-template-areas:
+            "nome nome"
+            "email email"
+            "phone phone"
+            "mensagem mensagem"
+            "button .";
+    }
+
+    form .input {
+        height: max-content;
+    }
+
+}
