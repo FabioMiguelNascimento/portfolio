@@ -176,6 +176,9 @@ form button:active {
 }
 
 @media screen and (max-width: 768px) {
+    .containerContato {
+        height: fit-content;
+    }
     .containerContato .textosContato {
         width: 100%;
         height: fit-content;
