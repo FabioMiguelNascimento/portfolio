@@ -35,13 +35,23 @@
         <nav>
 
             <ul data-visible="false" id="primary-navigation" class="primary-navigation flex">
-                <li><a href="#linguagens">Linguagens</a></li>
-                <li><a href="#projetos">Projetos</a></li>
-                <li><a href="#contato">Contato</a></li>
+                <li><a href="#linguagens" data-translate="NavLanguage">Linguagens</a></li>
+                <li><a href="#projetos" data-translate="NavProjects">Projetos</a></li>
+                <li><a href="#contato" data-translate="NavContact">Contato</a></li>
                 <li><a href="https://github.com/F4bi0zin" target="_blank"><i class="fab fa-github"></i> </a></li>
                 <li><a href="https://www.linkedin.com/in/fab-nascimento/" target="_blank"><i
                             class="fab fa-linkedin"></i> </a></li>
-                <li><a><i id="settings" class="fas fa-cog"></i></a></li>
+                <li> <div class="custom-select">
+                    <div class="select-selected">
+                        <i class="fa fa-globe"></i>
+                    </div>
+                    <div class="select-items">
+                        <div id="en">🇺🇲</div>
+                        <div id="pt">🇧🇷</div>
+                    </div>
+                </div>
+            </li>
+
             </ul>
         </nav>
     </header>
@@ -92,8 +102,9 @@
             <div class="foto" id="foto2">
                 <div class="fundo">
                     <div class="texto" id="textoSlide-2">
-                        <h1>Quem eu sou</h1>
-                        <span>Desde a infância, tenho mantido um forte envolvimento com o universo da tecnologia,
+                        <h1 data-translate="WhoAmI">Quem eu sou</h1>
+                        <span data-translate="WhoAmIText">Desde a infância, tenho mantido um forte envolvimento com o
+                            universo da tecnologia,
                             despertando um interesse pela programação desde cedo. Ao longo dos anos, desenvolvi
                             habilidades na criação de pequenos códigos e funções. Atualmente, aos 19 anos, estou
                             buscando oportunidades no mercado de tecnologia. Tenho um grande apreço por videogames e um
@@ -118,8 +129,9 @@
     <section class="b" id="linguagens">
         <div class="conteiner">
             <div class="textos">
-                <h1>Linguagens</h1>
-                <span>Essas são algumas das <b>linguagens</b> e <b>frameworks</b> que tenho me profissionalizado ao
+                <h1 data-translate="Language">Linguagens</h1>
+                <span data-translate="LanguageText">Essas são algumas das <b>linguagens</b> e <b>frameworks</b> que
+                    tenho me profissionalizado ao
                     longo dos
                     anos</span>
             </div>
@@ -168,8 +180,9 @@
 
     <section class="a" id="projetos">
         <div class="textos">
-            <h1>Projetos</h1>
-            <span>Nesta seção, você encontrará uma seleção dos meus projetos mais recentes, bem como aqueles que
+            <h1 data-translate="Projects">Projetos</h1>
+            <span data-translate="ProjectsText">Nesta seção, você encontrará uma seleção dos meus projetos mais
+                recentes, bem como aqueles que
                 considero
                 os melhores e mais representativos do meu trabalho</span>
         </div>
@@ -182,10 +195,11 @@
                 </div>
                 <div class="detalhes">
                     <div class="nome">
-                        <h1>Projeto bacana</h1>
+                        <h1 data-translate="BoxProjectName">Projeto bacana</h1>
                     </div>
                     <div class="descricao">
-                        <p>Descrição do projeto, pois esse e um projeto muito bacana e muito legal e interativo super
+                        <p data-translate="BoxProjectText">Descrição do projeto, pois esse e um projeto muito bacana e
+                            muito legal e interativo super
                             duperbacana</p>
                     </div>
                     <div class="techstack">
@@ -208,7 +222,7 @@
                         </ul>
                     </div>
                     <div class="btns">
-                        <button><i class="fab fa-github"></i> <b>Repositório</b></button>
+                        <button data-translate="Repository"><i class="fab fa-github"></i><b>Repositório</b></button>
                         <button><i class="fas fa-play"></i> <b>Online</b></button>
                     </div>
                 </div>
@@ -449,8 +463,9 @@
     <section class="b" id="contato">
         <div class="containerContato">
             <div class="textosContato">
-                <h1>Gostou do que viu?</h1>
-                <span>Se você gostou do meu trabalho e deseja entrar em contato comigo, sinta-se à vontade para me
+                <h1 data-translate="LikedWhatYouSaw?">Gostou do que viu?</h1>
+                <span data-translate="LikedWhatYouSaw?Text">Se você gostou do meu trabalho e deseja entrar em contato
+                    comigo, sinta-se à vontade para me
                     enviar
                     uma mensagem. Estou sempre aberto a novas oportunidades e desafios</span>
                 <lu class="listaContato flex">
@@ -460,11 +475,11 @@
                 </lu>
             </div>
             <div class="form">
-                <h1>Entre em Contato</h1>
+                <h1 data-translate="GetInTouch">Entre em Contato</h1>
                 <form>
                     <div class="input nome">
                         <input type="text" id="nome" name="nome" placeholder=" " required>
-                        <label for="nome">Nome</label>
+                        <label for="nome" data-translate="Name">Nome</label>
                     </div>
                     <div class="input email">
                         <input type="email" id="email" name="email" placeholder=" " required>
@@ -472,13 +487,13 @@
                     </div>
                     <div class="input phone">
                         <input id="phone" name="phone" placeholder=" " required>
-                        <label for="phone">Telefone</label>
+                        <label for="phone" data-translate="Phone">Telefone</label>
                     </div>
                     <div class="input mensagem">
                         <textarea id="mensagem" name="mensagem" placeholder=" " required></textarea>
-                        <label for="mensagem">Mensagem</label>
+                        <label for="mensagem" data-translate="Message">Mensagem</label>
                     </div>
-                    <button type="submit">Enviar</button>
+                    <button type="submit" data-translate="Submit">Enviar</button>
                 </form>
             </div>
     </section>
@@ -508,6 +523,7 @@
     <script src="./JS/carrossel.js"></script>
     <script src="./JS/nav.js"></script>
     <script src="./JS/infinitCarrossel.js"></script>
+    <script src="./JS/dublagem.js"></script>
 </body>
 
 

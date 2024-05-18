@@ -147,7 +147,8 @@
 @media (max-width: 768px) {
     #fotoSlide-1 {
         height: 70%;
-        right: -40%;
+        right: -30%;
+        height: 50%;
     }
 
     #fotoSlide-2 {
