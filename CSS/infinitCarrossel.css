@@ -1,5 +1,5 @@
 .logos {
-  background-color: var(--azulBebe);
+  background-color: var(--azulClaro);
   overflow: hidden;
   padding: 50px 0;
   white-space: nowrap;
@@ -10,7 +10,7 @@
 
 .logos-slide {
   display: inline-block;
-  animation: slide 10s linear infinite;  
+  animation: slide 15s linear infinite;  
 }
 
 .logos:hover .logos-slide {
@@ -51,12 +51,12 @@
 
 .logos:before {
   right: 0;
-  background: linear-gradient(to right, transparent, var(--azulBebe));
+  background: linear-gradient(to right, transparent, var(--azulClaro));
 }
 
 .logos:after {
   left: 0;
-  background: linear-gradient(to left, transparent, var(--azulBebe));
+  background: linear-gradient(to left, transparent, var(--azulClaro));
 }
 
 .textos{

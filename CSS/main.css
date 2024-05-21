@@ -33,6 +33,9 @@ html {
   scrollbar-width: none;
   scroll-snap-type: y proximity;
   scroll-behavior: smooth;
+  background-image: url("../assets/noise.png");
+  background-color: var(--azulFundo);
+  background-size: 100px;
 }
 
 ul{
