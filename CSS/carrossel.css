@@ -1,6 +1,6 @@
 .carrossel {
     width: 100svw;
-    height: 90svh;
+    height: 95svh;
     position: relative;
     overflow: hidden;
 }
@@ -104,7 +104,7 @@
     bottom: 0;
     right: 0;
     left: 0;
-    padding-bottom: 20px;
+    translate: transform(-50%);
 }
 
 [id^="btn-"] {
