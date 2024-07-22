@@ -1,7 +1,7 @@
 var translations = {
     'en': {
         'WhoAmI': 'Who am I',
-        'WhoAmIText': 'Since childhood, I have maintained a strong involvement with the world of technology, awakening an interest in programming from an early age. Over the years, I have developed skills in creating small codes and functions. Currently, at 19 years old, I am looking for opportunities in the technology market. I have a great appreciation for video games and a deep interest in web development, especially using <b>HTML</b>, <b>CSS</b>, <b>JavaScript</b>, <b>React</b >, in addition to software development with <b>Java</b>, <b>Spring Boot</b> and <b>C#</b>',
+        'WhoAmIText': 'Since childhood, I have maintained a strong involvement with the world of technology, awakening an interest in programming from an early age. Over the years, I have developed skills in creating small codes and functions. Currently, at 19 years old, I am looking for opportunities in the technology market. I have a great appreciation for video games and a deep interest in web development, especially using <b>HTML</b>, <b>CSS</b> and <b>JavaScript</b> in addition to software development with <b>Java</b>, <b>Spring Boot</b> and <b>C#</b>',
         'Language': 'Language',
         'LanguageText': 'These are some of the <b>languages</b> and <b>frameworks</b> that I have professionalized over the years</span>',
         'Projects': 'Projects',
@@ -27,7 +27,7 @@ var translations = {
     },
     'pt': {
         'WhoAmI': 'Quem eu sou',
-        'WhoAmIText': 'Desde a infância, tenho mantido um forte envolvimento com o universo da tecnologia, despertando um interesse pela programação desde cedo. Ao longo dos anos, desenvolvi habilidades na criação de pequenos códigos e funções. Atualmente, aos 19 anos, estou buscando oportunidades no mercado de tecnologia. Tenho um grande apreço por videogames e um profundo interesse em desenvolvimento web, especialmente utilizando <b>HTML</b>, <b>CSS</b>, <b>JavaScript</b>, <b>React</b>, além do desenvolvimento de software com <b>Java</b>, <b>Spring Boot</b> e <b>C#</b>',
+        'WhoAmIText': 'Desde a infância, tenho mantido um forte envolvimento com o universo da tecnologia, despertando um interesse pela programação desde cedo. Ao longo dos anos, desenvolvi habilidades na criação de pequenos códigos e funções. Atualmente, aos 19 anos, estou buscando oportunidades no mercado de tecnologia. Tenho um grande apreço por videogames e um profundo interesse em desenvolvimento web, especialmente utilizando <b>HTML</b>, <b>CSS</b> e <b>JavaScript</b>, além do desenvolvimento de software com <b>Java</b>, <b>Spring Boot</b> e <b>C#</b>',
         'Language' : 'Linguagens',
         'LanguageText': 'Essas são algumas das <b>linguagens</b> e <b>frameworks</b> que tenho me profissionalizado ao longo dos anos</span>',
         'Projects': 'Projetos',

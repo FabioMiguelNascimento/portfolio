@@ -91,7 +91,7 @@ async function renderizarProjetos() {
     });
 }
 
-// Inicialização
+// Inicialização 
 function inicializar() {
     renderizarProjetos();
 }
