@@ -3,32 +3,44 @@
     bottom: 20px;
     right: 20px;
     opacity: 0;
-    visibility: hidden;
-    opacity: 0;
-    transition: opacity 0.5s, visibility 0.5s;
-    background-color: #08998E;
-    border: solid white;
-    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    background: linear-gradient(
+      to bottom right,
+        var(--azulBebe),
+        var(--azulFundo),
+        var(--azulMedio),
+        var(--azulClaro)
+    );
+    color: white;
     width: 50px;
-    aspect-ratio: 1;
+    height: 50px;
+    border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%;
+    overflow: hidden;
+    animation: blob 3s linear infinite;
+    transition: 200ms;
+    filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.3));
     cursor: pointer;
     z-index: 1000;
-    transition: 300ms;
-    color: var(--textoClaro);
-}
-
-    @keyframes rotate {
-        0% {
-            transform: rotate(0deg);
-        }
-        100% {
-            transform: rotate(360deg);
-        }
+    border: none;
+  
+    &:hover {
+      scale: 1.1;
     }
-
-    #back-to-top-btn:hover {
-        transform: scale(1.1);
-        & i {
-            animation: rotate 0.5s linear alternate;
-        }
+  }
+  
+  #back-to-top-btn.active {
+    opacity: 1;
+  }
+  @keyframes blob {
+    0%,
+    100% {
+      border-radius: 40% 60% 70% 30% / 40% 40% 60% 50%;
     }
+    34% {
+      border-radius: 70% 30% 50% 50% / 30% 30% 70% 70%;
+    }
+    67% {
+      border-radius: 100% 60% 60% 100% / 100% 100% 60% 60%;
+    }
+  }

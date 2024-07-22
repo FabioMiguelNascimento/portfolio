@@ -1,16 +1,15 @@
-window.onscroll = function() {scrollFunction()};
+let botaoTop = document.getElementById('back-to-top-btn');
 
-function scrollFunction() {
-  var btn = document.getElementById("back-to-top-btn");
-  if (window.scrollY > 20) {
-    btn.style.opacity = "1";
-    btn.style.visibility = "visible";
-  } else {
-    btn.style.opacity = "0";
-    btn.style.visibility = "hidden";
-  }
-}
+window.addEventListener('scroll', function() {
+    if (window.scrollY > 100) {
+        botaoTop.classList.add('active');
+    } else {
+        botaoTop.classList.remove('active');
+    }
+})
 
-document.getElementById('back-to-top-btn').addEventListener('click', function() {
-    window.scrollTo({top: 0, behavior: 'smooth'});
-});
+botaoTop.addEventListener('click', function() {
+    window.scrollTo({
+        top: 0,
+    })
+})

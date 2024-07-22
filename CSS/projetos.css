@@ -15,7 +15,6 @@
     flex-direction: column;
     box-shadow: 0 0 10px white;
     position: relative;
-    overflow: hidden;
     background-color: var(--brancoFundo);
     border-radius: 3px;
 
@@ -50,8 +49,41 @@
     justify-content: space-between;
     height: 100%;
     width: 100%;
+    flex: 1 1 auto;
     box-sizing: border-box;
+    position: relative;
     color: var(--textoEscuro);
+}
+
+.status-emoji {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px; /* Ajuste conforme necessário */
+    cursor: help;
+    cursor: pointer;
+}
+
+.status-emoji .tooltiptext {
+    bottom: auto;
+    top: 125%;
+    right: 0;
+    left: auto;
+    margin-left: 0;
+}
+
+.status-emoji .tooltiptext::after {
+    top: auto;
+    bottom: 100%;
+    right: 10px;
+    left: auto;
+    border-color: transparent transparent var(--azulMedio) transparent;
+}
+
+.techstack .icon {
+    width: 15px;
+    height: 15px;
+    vertical-align: middle;
 }
 
 .direita .image {
@@ -72,10 +104,15 @@
 }
 
 .box ul li {
-    background-color: var(--azulMedio);
-    padding: 5px 10px;
+    background: linear-gradient(
+        to bottom right,
+        var(--azulMedio),
+        var(--azulClaro)
+    );
+    padding: 5px;
     border-radius: 5px;
 }
+
 
 .direita ul {
     justify-content: flex-end;
@@ -98,7 +135,11 @@
     justify-content: center;
     padding: 20px;
     width: 100%;
-    background-color: var(--azulMedio);
+    background: linear-gradient(
+        to right,
+        var(--azulMedio),
+        var(--azulClaro)
+    );
     color: var(--textoClaro);
     border: none;
     cursor: pointer;
@@ -125,13 +166,12 @@
 }
 
 .projetos-botao:hover {
-    background-color: var(--azulClaro);
-    & .link {
-        display: inline;
-        &:hover {
-            color: var(--textoEscuro);
-        }
-    }
+    background: linear-gradient(
+        to right,
+        var(--azulMedio),
+        var(--azulClaro),
+        var(--azulMedio)
+    );
 }
 /* Media Queries para responsividade */
 @media (min-width: 768px) {

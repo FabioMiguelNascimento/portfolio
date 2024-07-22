@@ -101,7 +101,9 @@
   margin-left: -60px;
 }
 
-.tooltip:hover .tooltiptext {
+.tooltip:hover .tooltiptext,
+.tooltip:focus .tooltiptext,
+.tooltip:active .tooltiptext {
   visibility: visible;
 }
 

@@ -1,0 +1,78 @@
+{
+    "categorias": [
+        {
+            "id": 1,
+            "nome": "HTML CSS JS",
+            "projetos": [
+                {
+                    "id": 1,
+                    "nome": "Loja Online",
+                    "descricao": "Este projeto é uma réplica de uma loja de comércio eletrônico para venda de diversos produtos. Ele conta com JavaScript para realizar as funções de fetch, categorias de produtos (em produção), carrinho de compras (em produção), filtragem de produtos (em produção)",
+                    "linguagens": ["HTML", "CSS", "JavaScript"],
+                            "imagem": "./assets/lojaOnline.png",
+                    "links": [
+                        {
+                            "nome": "GitHub",
+                            "url": "https://github.com/FabioMiguelNascimento/LojaOnline"
+                        },
+                        {
+                            "nome": "Site",
+                            "url": "http://fabiomiguelnascimento.github.io/LojaOnline/"
+                        }
+                    ],
+                    "status": "Em andamento"
+                },
+                {
+                    "id": 2,
+                    "nome": "Mundo Animal",
+                    "descricao": "Este projeto não passa de uma simples Landing Page que utiliza algumas funções como shape-outside e clip path. Este projeto mostra um pouco sobre a minha qualidade de design e como eu internalizo isso no código.",
+                    "linguagens": ["HTML", "CSS", "JavaScript"],
+                    "imagem": "./assets/mundoAnimal.png",
+                    "links": [
+                        {
+                            "nome": "GitHub",
+                            "url": "https://github.com/FabioMiguelNascimento/MundoAnimal"
+                        },
+                        {
+                            "nome": "Site",
+                            "url": "https://fabiomiguelnascimento.github.io/MundoAnimal/"
+                        }
+                    ],
+                    "status": "Concluído"
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "nome": "PROTOTIPAGEM",
+            "projetos": [
+                {
+                    "id": 3,
+                    "nome": "Projeto 3",
+                    "descricao": "Descrição do projeto 3",
+                    "imagem": "https://via.placeholder.com/150",
+                    "links": [
+                        {
+                            "nome": "Figma",
+                            "url": "https://figma.com"
+                        }
+                    ],
+                    "status": "Em andamento"
+                },
+                {
+                    "id": 4,
+                    "nome": "Projeto 4",
+                    "descricao": "Descrição do projeto 4",
+                    "imagem": "https://via.placeholder.com/150",
+                    "links": [
+                        {
+                            "nome": "Figma",
+                            "url": "https://figma.com"
+                        }
+                    ],
+                    "status": "Concluído"
+                }
+            ]
+        }
+    ]
+}
