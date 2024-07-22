@@ -1,7 +1,7 @@
 // Função para carregar os dados do JSON
 async function carregarProjetos() {
     try {
-        const response = await fetch('./data/projetos.json');
+        const response = await fetch('data/projetos.json');
         const data = await response.json();
         return data.categorias;
     } catch (error) {
