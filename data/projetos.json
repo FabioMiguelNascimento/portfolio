@@ -8,8 +8,12 @@
                     "id": 1,
                     "nome": "Loja Online",
                     "descricao": "Este projeto é uma réplica de uma loja de comércio eletrônico para venda de diversos produtos. Ele conta com JavaScript para realizar as funções de fetch, categorias de produtos (em produção), carrinho de compras (em produção), filtragem de produtos (em produção)",
-                    "linguagens": ["HTML", "CSS", "JavaScript"],
-                            "imagem": "./assets/lojaOnline.png",
+                    "linguagens": [
+                        "HTML",
+                        "CSS",
+                        "JavaScript"
+                    ],
+                    "imagem": "./assets/lojaOnline.png",
                     "links": [
                         {
                             "nome": "GitHub",
@@ -26,7 +30,11 @@
                     "id": 2,
                     "nome": "Mundo Animal",
                     "descricao": "Este projeto não passa de uma simples Landing Page que utiliza algumas funções como shape-outside e clip path. Este projeto mostra um pouco sobre a minha qualidade de design e como eu internalizo isso no código.",
-                    "linguagens": ["HTML", "CSS", "JavaScript"],
+                    "linguagens": [
+                        "HTML",
+                        "CSS",
+                        "JavaScript"
+                    ],
                     "imagem": "./assets/mundoAnimal.png",
                     "links": [
                         {
@@ -48,26 +56,17 @@
             "projetos": [
                 {
                     "id": 3,
-                    "nome": "Projeto 3",
-                    "descricao": "Descrição do projeto 3",
-                    "imagem": "https://via.placeholder.com/150",
-                    "links": [
-                        {
-                            "nome": "Figma",
-                            "url": "https://figma.com"
-                        }
+                    "nome": "Landing Pages",
+                    "descricao": "Aqui demonstro algumas landing pages que fiz no Figma e Photoshop. São páginas de lançamento para pessoas e pequenas causas.",
+                    "isFigma": true,
+                    "figmaEmbed": "https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2F7hezmnAk4GbDH0R0gSJ6cF%2FLandingPages%3Fpage-id%3D0%253A1%26node-id%3D206-331%26viewport%3D598%252C600%252C0.07%26t%3DxrQtH9FCwUYvz0Hy-1%26scaling%3Dmin-zoom%26content-scaling%3Dfixed",
+                    "linguagens": [
+                        "FIGMA", "PHOTOSHOP"
                     ],
-                    "status": "Em andamento"
-                },
-                {
-                    "id": 4,
-                    "nome": "Projeto 4",
-                    "descricao": "Descrição do projeto 4",
-                    "imagem": "https://via.placeholder.com/150",
                     "links": [
                         {
                             "nome": "Figma",
-                            "url": "https://figma.com"
+                            "url": "https://www.figma.com/proto/7hezmnAk4GbDH0R0gSJ6cF/LandingPages?page-id=0%3A1&node-id=206-331&t=DZA8pkjMqjAARXw3-0&scaling=min-zoom&content-scaling=fixed"
                         }
                     ],
                     "status": "Concluído"

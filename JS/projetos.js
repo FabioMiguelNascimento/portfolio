@@ -9,10 +9,9 @@ async function carregarProjetos() {
     }
 }
 
-// Função para criar o HTML de um projeto individual
 function criarHTMLProjeto(projeto, index) {
     const direcao = index % 2 === 0 ? 'esquerda' : 'direita';
-    
+   
     function getIconPath(linguagem) {
         const nomeArquivo = linguagem.toLowerCase().replace(/[^a-z0-9]/g, '') + '.svg';
         return `./icons/${nomeArquivo}`;
@@ -21,45 +20,49 @@ function criarHTMLProjeto(projeto, index) {
     function getStatusEmoji(status) {
         switch (status.toLowerCase()) {
             case 'em andamento':
-                return '🚧'; // Emoji de construção
+                return '🚧';
             case 'concluído':
-                return '✅'; // Emoji de check verde
+                return '✅';
             default:
-                return '❓'; // Emoji de interrogação para status desconhecido
+                return '❓';
         }
     }
+
+    const imageOrIframe = projeto.isFigma
+        ? `<iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="100%" height="100%" src="${projeto.figmaEmbed}" allowfullscreen></iframe>`
+        : `<a href="${projeto.links.find(link => link.nome === 'Site')?.url || '#'}" target="_blank">
+               <img src="${projeto.imagem}" alt="${projeto.nome}">
+           </a>`;
 
     return `
     <div class="box ${direcao} ${projeto.nome.replace(/\s+/g, '')}">
         <div class="image">
-            <a href="${projeto.links.find(link => link.nome === 'Site')?.url || '#'}" target="_blank">
-                <img src="${projeto.imagem}" alt="${projeto.nome}">
-            </a>
+            ${imageOrIframe}
         </div>
         <div class="detalhes">
             <div class="status-emoji tooltip">
                 ${getStatusEmoji(projeto.status)}
-                <span class="tooltiptext">${projeto.status}</span>
+                <span class="tooltiptext" data-translate="status_${projeto.status.toLowerCase().replace(/\s+/g, '_')}">${projeto.status}</span>
             </div>
             <div class="nome">
-                <h1>${projeto.nome}</h1>
+                <h1 data-translate="project_name_${projeto.id}">${projeto.nome}</h1>
             </div>
             <div class="descricao">
-                <p>${projeto.descricao}</p>
+                <p data-translate="project_description_${projeto.id}">${projeto.descricao}</p>
             </div>
             <ul class="techstack">
-                ${projeto.linguagens ? projeto.linguagens.map(lang => 
+                ${projeto.linguagens ? projeto.linguagens.map(lang =>
                     `<li class="tooltip">
                         <img src="${getIconPath(lang)}" alt="${lang}" class="icon">
-                        <span class="tooltiptext">${lang}</span>
+                        <span class="tooltiptext" data-translate="tech_${lang.toLowerCase().replace(/\s+/g, '_')}">${lang}</span>
                     </li>`
                 ).join('') : ''}
             </ul>
             <div class="btns">
-                ${projeto.links.map(link => 
+                ${projeto.links.map(link =>
                     `<a href="${link.url}" target="_blank" class="projetos-botao">
                         <i class="${link.nome.toLowerCase() === 'site' ? 'fas fa-play' : 'fab fa-' + link.nome.toLowerCase()} icon"></i>
-                        <span>${link.nome}</span>
+                        <span data-translate="link_${link.nome.toLowerCase()}">${link.nome}</span>
                     </a>`
                 ).join('')}
             </div>
