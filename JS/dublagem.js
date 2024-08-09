@@ -20,7 +20,7 @@ var translations = {
         'NavContact': 'Contact',
         'Repository': '<i class="fab fa-github"></i> <b>Repository</b>',
         'footer-credits': '© 2024 <b>Fabio Miguel Nascimento</b>. All rights reserved',
-        'fullstack': 'Full Stack Developer',
+        'fullstack': 'Front-end Developer',
 
         // Novas traduções para projetos
         'project_name_1': 'Online Store',
@@ -67,7 +67,7 @@ var translations = {
         'NavContact': 'Contato',
         'Repository': '<i class="fab fa-github"></i> <b>Repositório</b>',
         'footer-credits' : '© 2024 <b>Fábio Miguel Nascimento</b>. Todos os direitos reservados',
-        'fullstack': 'Desenvolvedor Full Stack',
+        'fullstack': 'Desenvolvedor Front-end',
 
         // Novas traduções para projetos
         'project_name_1': 'Loja Online',
