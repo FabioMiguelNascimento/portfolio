@@ -19,7 +19,7 @@ var translations = {
         'NavContact': 'Contact',
         'Repository': '<i class="fab fa-github"></i> <b>Repository</b>',
         'footer-credits': '© 2024 <b>Fabio Miguel Nascimento</b>. All rights reserved',
-        'fullstack': 'Full Stack Developer',
+        'fullstack': 'Front-end Developer',
 
         'project_name_1': 'Online Store',
         'project_description_1': 'This project is a replica of an e-commerce store for selling various products. It relies on JavaScript to perform the functions of fetch, product categories (in production), shopping cart (in production), product filtering (in production)',
@@ -61,7 +61,7 @@ var translations = {
         'NavContact': 'Contato',
         'Repository': '<i class="fab fa-github"></i> <b>Repositório</b>',
         'footer-credits' : '© 2024 <b>Fábio Miguel Nascimento</b>. Todos os direitos reservados',
-        'fullstack': 'Desenvolvedor Full Stack',
+        'fullstack': 'Desenvolvedor Front-end',
 
         'project_name_1': 'Loja Online',
         'project_description_1': 'Este projeto é uma réplica de uma loja de comércio eletrônico para venda de diversos produtos. Ele conta com JavaScript para realizar as funções de fetch, categorias de produtos (em produção), carrinho de compras (em produção), filtragem de produtos (em produção)',
